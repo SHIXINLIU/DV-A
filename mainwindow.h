@@ -33,7 +33,6 @@ private slots:
     void on_NameButton_clicked();
     void on_AddressButton_clicked();
     //void on_TypeButton_clicked();
-    void on_MapButton_clicked();
 };
 
 #endif // MAINWINDOW_H

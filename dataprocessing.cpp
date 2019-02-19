@@ -7,7 +7,7 @@
 QList<class restaurant> dataprocessing()
 {
     QList<class restaurant> data;
-    QFile csvFile("C:/Users/CHARLIE LIU/Documents/WeChat Files/liuxingcai484980/Files/DV-A-master/DV-A-master/restaurant.csv");
+    QFile csvFile("/Users/Apple020/Desktop/DV-A-master/restaurant.csv");
     QStringList CSVList;
     CSVList.clear();
     if (csvFile.open(QIODevice::ReadWrite))
@@ -20,7 +20,7 @@ QList<class restaurant> dataprocessing()
         csvFile.close();
     }
 
-    int i=0;
+    //int i=0;
     Q_FOREACH(QString str, CSVList)
     {
         //qDebug() << str<<"\n";
@@ -37,8 +37,8 @@ QList<class restaurant> dataprocessing()
         restaurant r = restaurant(_name,_latitude,_longitude,_stars,_review_count,_address);
         data.append(r);
 
-        i++;
-        qDebug() << i << _name <<" "<<_address<<endl;
+        //i++;
+        //qDebug() << i << _name <<" "<<_address<<endl;
     }
     return data;
 

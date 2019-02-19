@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1016</width>
-    <height>766</height>
+    <width>1140</width>
+    <height>917</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>660</x>
-      <y>20</y>
+      <y>10</y>
       <width>115</width>
       <height>19</height>
      </rect>
@@ -44,7 +44,7 @@
     <property name="geometry">
      <rect>
       <x>660</x>
-      <y>50</y>
+      <y>40</y>
       <width>115</width>
       <height>19</height>
      </rect>
@@ -56,17 +56,17 @@
    <widget class="QLabel" name="ShowLabel">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>100</y>
-      <width>351</width>
-      <height>371</height>
+      <x>50</x>
+      <y>90</y>
+      <width>531</width>
+      <height>661</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">image:url(:/map.jpg);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;Welcome！&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Please follow this steps to use the system:&lt;/p&gt;&lt;p&gt;1. Choose the method of searching. If you &lt;/p&gt;&lt;p&gt;want to search by the name of restaurant, &lt;/p&gt;&lt;p&gt;please click the &amp;quot;Name&amp;quot; button. If you want &lt;/p&gt;&lt;p&gt;to search by the address of restaurant, &lt;/p&gt;&lt;p&gt;please click the &amp;quot;Address&amp;quot; button.&lt;/p&gt;&lt;p&gt;2. Type your key words on the line.&lt;/p&gt;&lt;p&gt;3. Click the &amp;quot;Search&amp;quot; button.&lt;/p&gt;&lt;p&gt;4. Click the &amp;quot;Map&amp;quot; button to see the result &lt;/p&gt;&lt;p&gt;on a map.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="SearchButton">
@@ -85,10 +85,10 @@
    <widget class="QLabel" name="ListLabel">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>561</width>
-      <height>621</height>
+      <x>670</x>
+      <y>100</y>
+      <width>461</width>
+      <height>671</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -98,35 +98,16 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="MapButton">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>500</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Map</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1016</width>
-     <height>26</height>
+     <width>1140</width>
+     <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuProvidence_Food_Map">
-    <property name="title">
-     <string>Providence Food Map</string>
-    </property>
-   </widget>
-   <addaction name="menuProvidence_Food_Map"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

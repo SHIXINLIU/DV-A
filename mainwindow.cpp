@@ -55,8 +55,8 @@ void MainWindow::on_SearchButton_clicked()
                 i++;
             }
             ui->ListLabel->setText(R);
-            //MyImgTest* widget = new MyImgTest();
-            //    widget->show();
+            MyImgTest* widget = new MyImgTest();
+                widget->show();
             //QMessageBox::information(this, tr("list"),R)
         }
         else {
@@ -71,7 +71,14 @@ void MainWindow::on_SearchButton_clicked()
 
 }
 
+/*void MainWindow::show_results(QString searchs)
+{
+    if (searchs=="0")
+    {
+        QMessageBox::information(this, tr("tableModel"),tr("数据修改成功！"));
+    }
 
+}*/
 
 MainWindow::~MainWindow()
 {
@@ -88,40 +95,24 @@ void MainWindow::on_AddressButton_clicked()
     MainWindow::set_method(2);
 }
 
-/*void MainWindow::on_TypeButton_clicked()
-{
-    MainWindow::set_method(3);
-}*/
 
-void MainWindow::on_MapButton_clicked()
+/*void MainWindow::paintEvent(QPaintEvent *)
 {
-    QList<restaurant> data;
-    data.clear();
-    data=dataprocessing();
-    QString searchs = ui->SearchEdit->text();
+    QPainter painter(this);             // 创建QPainter一个对象
+    QPen pen;
 
-    if (searchs.isEmpty() == 0)
+    //pen.setStyle(Qt::DashLine);
+    //pen.setColor(Qt::red);           // 设置画笔为黄色
+
+    painter.setPen(QPen(Qt::red,3));                // 设置画笔
+
+    // 画多个点
+    QPointF pointf[10];
+    for (int i=0; i<10; ++i)
     {
-        //QList<restaurant> result;
-        result=match(method,searchs,data);
-        QString R;
-
-        if (result.isEmpty()==0)
-        {
-            int i=1;
-            Q_FOREACH(restaurant r, result)
-            {
-                R+=     QString::number(i)+": \n"+
-                        r.getname().toUpper()+"\n"+
-                        "Address: "+r.getaddress()+"\n"+
-                        "Average Stars: "+QString::number(r.getstars())+"\n"+
-                        "Review Count: "+QString::number(r.getreview_count())+"\n"+
-                        "\n";
-                i++;
-            }
-            ui->ListLabel->setText(R);
-            MyImgTest* widget = new MyImgTest();
-                widget->show();
-        }
+        pointf[i].setX(2.0+i*10.0);
+        pointf[i].setY(130.0);
     }
-}
+    painter.drawPoints(pointf, 10);
+
+}*/
